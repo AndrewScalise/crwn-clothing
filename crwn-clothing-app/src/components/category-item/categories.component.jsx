@@ -30,12 +30,19 @@ const Categories = () => {
     },
   ];
 
+  const divider = {
+    div: "div",
+    dl: "dl"
+  };
+
   return (
-    <div className="categories-container">
+    <divider.div>
+    <divider.dl className="categories-container">
       {categories.map((category) => (
         <CategoryItem key={category.id} category={category} />
       ))}
-    </div>
+    </divider.dl>
+    </divider.div>
   );
 };
 
